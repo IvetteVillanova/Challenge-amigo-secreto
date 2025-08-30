@@ -1,9 +1,10 @@
 //Crear el array
 function listadoAmigos(){
-    let amigos = parseInt(document.getElementById('amigo').value);
+    let amigos = [];
+    amigo = parseInt(document.getElementById('amigo').value);
 
     document.querySelectorAll('reiniciar');
-console.log(amigos);
+    console.log(amigos);
 
 
 }
