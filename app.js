@@ -1,7 +1,14 @@
 //Crear el array
+
+//necesito agregar el push 
+
+
+
 function listadoAmigos(){
     let amigos = [];
-    amigo = parseInt(document.getElementById('amigo').value);
+    let amigo = parseInt(document.getElementById('amigo').value);
+    nuevoNombre = amigo.push
+
 
     document.querySelectorAll('agregar');
     console.log(amigos);
