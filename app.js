@@ -1,5 +1,5 @@
 
-// Array global para almacenar los nombres
+// Array para almacenar los nombres
 let amigos = [];
 
 // Función para agregar un nuevo amigo
@@ -8,13 +8,17 @@ function agregarAmigo() {
     const nombre = input.value.trim();
 
     if (nombre.length === 0) {
-        // Opcional: puedes mostrar un mensaje de error aquí si el nombre está vacío
+        alert('Agrega un nombre en la casilla')
+
         return;
     }
+    else {
+        amigos.push(nombre); // Agrega el nombre al array
+        input.value = ""; // Limpia el input
+        mostrarListaAmigos(); // Actualiza la lista en pantalla
 
-    amigos.push(nombre); // Agrega el nombre al array
-    input.value = ""; // Limpia el input
-    mostrarListaAmigos(); // Actualiza la lista en pantalla
+    }
+    
 }
 
 // Función para mostrar la lista de amigos en el ul
