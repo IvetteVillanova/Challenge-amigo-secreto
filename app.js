@@ -2,6 +2,7 @@
 // Array para almacenar los nombres
 let amigos = [];
 console.log(amigos)
+console.log(amigo)
 
 // Función para agregar un nuevo amigo
 function agregarAmigo() {
