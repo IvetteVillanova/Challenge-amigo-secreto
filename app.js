@@ -37,7 +37,7 @@ function mostrarListaAmigos() {
 // Función para sortear 
 function sortearAmigo() {
     const resultado = document.getElementById('resultado');
-    resultado.innerHTML = ""; // Limpia resultado anterior
+    resultado.innerHTML = "";
 
     if (amigos.length === 0) {
         // Si no hay amigos, muestra un mensaje
@@ -50,6 +50,8 @@ function sortearAmigo() {
     // Selecciona un índice aleatorio del array amigos
     const indice = Math.floor(Math.random() * amigos.length);
     const nombreSorteado = amigos[indice];
+
+    amigos.splice(indice, 1);
 
     // Muestra el nombre sorteado en el resultado
     const li = document.createElement('li');
