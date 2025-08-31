@@ -2,7 +2,6 @@
 // Array para almacenar los nombres
 let amigos = [];
 console.log(amigos)
-console.log(amigo)
 
 // Función para agregar un nuevo amigo
 function agregarAmigo() {
@@ -23,7 +22,7 @@ function agregarAmigo() {
     
 }
 
-// Función para mostrar la lista de amigos en el ul
+// Función para mostrar la lista de amigos
 function mostrarListaAmigos() {
     const lista = document.getElementById('listaAmigos');
     lista.innerHTML = ""; // Limpia la lista antes de mostrarla
@@ -34,10 +33,3 @@ function mostrarListaAmigos() {
         lista.appendChild(li);
     });
 }
-
-// Opcional: permitir agregar el nombre presionando Enter en el input
-document.getElementById('amigo').addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        agregarAmigo();
-    }
-});
