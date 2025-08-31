@@ -42,7 +42,7 @@ function sortearAmigo() {
     if (amigos.length === 0) {
         // Si no hay amigos, muestra un mensaje
         const li = document.createElement('li');
-        li.textContent = "No hay amigos en la lista para sortear.";
+        li.textContent = "No hay amigos en la lista para sortear. Empieza el juego nuevamente.";
         resultado.appendChild(li);
         return;
     }
